@@ -53,7 +53,76 @@ main {
 	overflow: hidden;
 }
 
-.logo-full {
+.logo {
+	position: relative;
+}
+
+.logo__box {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 2;
+	width: 16%;
+    height: 32%;
+	top: 17%;
+    left: 13.3%;
+    background: grey;
+    opacity: 0;
+}
+
+.logo__square {
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+	position: absolute;
+	z-index: 1;
+	width: 2vw;
+	height: 0;
+	top: 35%;
+    left: 13.3%;
+}
+
+.logo__box:hover + .logo__square {
+	animation: square-move 3s ease-in-out 2 alternate;
+}
+
+@keyframes square-move {
+  0%   {
+  	height: 0;
+  	top: 35%;
+    left: 13.3%;
+  }
+  1%   {
+  	height: 2vw;
+  	top: 35%;
+    left: 13.3%;
+  }
+  25%  {
+  	top: 17%;
+  	left: 13.3%;
+  }
+  50%  {
+  	top: 17%;
+  	left: 27.5%;
+  }
+  75%  {
+  	top: 45%;
+  	left: 27.5%;
+  }
+  96% {
+  	/*width: 2vw;*/
+  	top: 45%;
+  	left: 19.5%;
+  }
+  100% {
+  	height: 2vw;
+  	/*width: 0;*/
+  	top: 45%;
+  	left: 19.5%;
+  }
+}
+
+.logo__image {
 	width: 100vw;
 	height: 100%;
 	object-fit: cover;
