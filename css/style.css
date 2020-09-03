@@ -1,0 +1,84 @@
+html {
+	--main-color: black;
+	--white: #FFF;
+	--teal: rgb(117, 196, 192);
+	--orange: rgb(255, 168, 17);
+	--red: rgb(209, 10, 50);
+	--purple: rgb(156, 17, 255);
+	--yellow: rgb(232, 180, 9);
+	--pink: rgb(241, 36, 244);
+	--blue: rgb(36, 99, 244);
+	--green: rgb(36, 244, 116);
+	--brightteal: rgb(66, 244, 176);
+}
+
+body {
+	margin: 0;
+	font-family: Gafata;
+	color: var(--main-color);
+}
+
+.content {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.section {
+
+}
+
+header {
+	background: black;
+	color: white;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav {
+	padding: 3px 10px;
+	font-weight: bold;
+}
+.nav ul {
+	list-style: none;
+}
+.nav li {
+	display: inline;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+main {
+	color: rgb(117, 117, 117);
+	overflow: hidden;
+}
+
+.logo-full {
+	width: 100vw;
+	height: 100%;
+	object-fit: cover;
+}
+
+.info {
+	padding-top: 40px;
+	width: 55%;
+	margin: 0 auto;
+	font-size: 17px;
+	color: rgb(68, 68, 68);
+	font-weight: 400;
+}
+
+main p {
+	padding: 15px;
+}
+
+footer {
+	color: rgb(117, 117, 117);
+	font-weight: 700;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer__contact {
+	font-size: 13px;
+	padding-bottom: 10px;
+}
